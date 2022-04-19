@@ -6,6 +6,11 @@ export class LoginPageHelper extends PageHelper {
     dashboard: { url: '#/dashboard', id: 'cd-dashboard' }
   };
 
+  checkAccessibility() {
+    cy.injectAxe();
+    cy.checkA11y()
+  }
+
   doLogin() {
     cy.get('[name=username]').type('admin');
     cy.get('#password').type('admin');

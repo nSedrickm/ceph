@@ -3,6 +3,11 @@ import { LoginPageHelper } from './login.po';
 describe('Login page', () => {
   const login = new LoginPageHelper();
 
+  it('should check accessibility', () => {
+    login.navigateTo();
+    login.checkAccessibility();
+  });
+
   it('should login and navigate to dashboard page', () => {
     login.navigateTo();
     login.doLogin();

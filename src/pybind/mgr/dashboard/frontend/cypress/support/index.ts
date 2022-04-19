@@ -1,6 +1,8 @@
 import '@applitools/eyes-cypress/commands';
 
 import './commands';
+import 'cypress-axe';
+
 
 afterEach(() => {
   cy.visit('#/403');
