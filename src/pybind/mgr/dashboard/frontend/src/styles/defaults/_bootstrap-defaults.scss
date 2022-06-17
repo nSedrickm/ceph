@@ -25,6 +25,7 @@ $cyan: #17a2b8 !default;
 $barley-white: #fcecba !default;
 
 $primary: #2b99a8 !default;
+$primary-wcag-aa-large-text: #25828e !default;
 $secondary: #374249 !default;
 $success: $green !default;
 $info: $primary !default;
@@ -55,6 +56,8 @@ $body-bg-alt: $gray-200 !default;
 $health-color-error: #f00 !default;
 $health-color-healthy: $green !default;
 $health-color-warning: #ffa500 !default;
+$health-color-warning-wcag-aa-large-text: #d48200 !default;
+$health-color-warning-wcag-aa-regular-text: #ae6200 !default;
 
 // Chart colors.
 $chart-color-red: #c9190b !default;
