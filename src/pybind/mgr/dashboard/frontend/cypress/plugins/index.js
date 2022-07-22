@@ -20,6 +20,10 @@ module.exports = (on, _config) => {
       optional ? console.log(message, optional) : console.log(message);
       return null;
     },
+    logA11yError(message) {
+      console.table(message);
+      return null;
+    }
   });
 };
 

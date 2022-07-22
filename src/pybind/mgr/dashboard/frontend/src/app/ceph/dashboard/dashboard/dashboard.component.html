@@ -1,4 +1,5 @@
-<div>
+<main>
+  <h1 class="sr-only">Dashboard</h1>
   <cd-refresh-selector></cd-refresh-selector>
 
   <ng-container *ngIf="hasGrafana">
@@ -25,4 +26,4 @@
   </ng-container>
 
   <cd-health *ngIf="!hasGrafana"></cd-health>
-</div>
+</main>
