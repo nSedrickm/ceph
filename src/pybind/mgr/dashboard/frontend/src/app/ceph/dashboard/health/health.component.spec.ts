@@ -216,7 +216,7 @@ describe('HealthComponent', () => {
       By.css('cd-info-card[cardTitle="Cluster Status"]')
     );
     const clickableContent = clusterStatusCard.query(By.css('.info-card-content-clickable'));
-    expect(clickableContent.nativeElement.textContent).toEqual(` ${payload.health.status} `);
+    expect(clickableContent.nativeElement.textContent).toEqual(' WARNING ');
   });
 
   it('event binding "prepareReadWriteRatio" is called', () => {
